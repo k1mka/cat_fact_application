@@ -16,39 +16,33 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-        backgroundColor: Colors.pinkAccent.withOpacity(0.10),
+        backgroundColor: Colors.pinkAccent,
         // TODO: Сделать красивый задний фон
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: Text('myCatApp'),
+          title: const Text('myCatApp'),
         ),
         body: SingleChildScrollView(
           child: Column(
-            children: const [
-              Padding(
-                padding: EdgeInsets.all(44.0),
+            children: [
+              const Padding(
+                padding: const EdgeInsets.all(44.0),
               ),
-              Center(
+              const Center(
                 child: CatImageWidget(
                   //TODO: ДОБАВИТЬ КРАСИВУЮ РАМКУ
                   link:
                       'https://24tv.ua/resources/photos/news/800x800_DIR/202103/1564564_14906372.jpg?202103140113',
                 ),
               ),
-              SizedBox(
-                height: 6,
-              ),
+              const SizedBox(height: 6),
               CatFactWidget(
-                fact:
-                    'cats is beutifule animals cats is beutifule animals cats is beutifule animals cats is beutifule animals '
-                    'cats is beutifule animals cats is beutifule animals cats is beutifule animals cats is beutifule animals',
+                fact: 'cats is beutifule animals' * 10,
               ),
-              RandomContentButtonWidget(),
-              SizedBox(
-                height: 8,
-              ),
-              MyHistoryButton(),
+              const RandomContentButtonWidget(),
+              const SizedBox(height: 8),
+              const MyHistoryButton(),
             ],
           ),
         ),

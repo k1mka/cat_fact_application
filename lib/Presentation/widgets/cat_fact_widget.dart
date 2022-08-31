@@ -6,13 +6,15 @@ class CatFactWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(44.0),
-      child: Text(
-        fact,
-        style: const TextStyle(
-          fontSize: 12,
-          // TODO: добавить красивый шрифт
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Text(
+          fact,
+          style: const TextStyle(
+            fontSize: 20,
+            // TODO: добавить красивый шрифт
+          ),
         ),
       ),
     );

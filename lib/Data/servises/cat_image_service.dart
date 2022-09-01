@@ -6,7 +6,7 @@ abstract class CatImageService {
   Future<String> fetchImages();
 }
 
-class CatImagesServiceImpl implements CatImageService {
+class CatImageServiceImpl implements CatImageService {
   @override
   Future<String> fetchImages() async {
     final url = Uri.parse('https://cataas.com/cat?json=true');

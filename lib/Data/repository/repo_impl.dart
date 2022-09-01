@@ -3,19 +3,22 @@ import 'package:cat_fact_application/Data/servises/cat_fact_service.dart';
 import 'package:cat_fact_application/Data/servises/cat_image_service.dart';
 
 class RepositoryImpl extends Repository {
-  final CatImagesServiceImpl catImagesServiceImpl;
-  final CatFactServiceImpl catFactServiceImpl;
+  final CatImageService catImagesService;
+  final CatFactService catFactService;
 
-  RepositoryImpl(this.catImagesServiceImpl, this.catFactServiceImpl);
+  RepositoryImpl({
+    required this.catImagesService,
+    required this.catFactService,
+  });
   @override
   Future<String> fetchImages() async {
-    final images = await catImagesServiceImpl.fetchImages();
+    final images = await catImagesService.fetchImages();
     return images;
   }
 
   @override
   Future<Map> fetchFacts() async {
-    final facts = await catFactServiceImpl.fetchFacts();
+    final facts = await catFactService.fetchFacts();
     return facts;
   }
 }

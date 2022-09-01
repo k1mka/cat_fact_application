@@ -14,8 +14,8 @@ class RepositoryImpl extends Repository {
   }
 
   @override
-  Future<String> fetchFacts() {
-    final facts = catFactServiceImpl.fetchFacts();
+  Future<Map> fetchFacts() async {
+    final facts = await catFactServiceImpl.fetchFacts();
     return facts;
   }
 }

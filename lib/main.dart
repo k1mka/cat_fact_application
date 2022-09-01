@@ -1,6 +1,9 @@
-import 'package:cat_fact_application/Presentation/screens/home_page.dart';
+import 'package:cat_fact_application/get_it.dart';
 import 'package:flutter/material.dart';
 
+import 'cat_trivia_app.dart';
+
 void main() {
-  runApp(const HomePage());
+  setupServiceLocator();
+  runApp(const CatTrivia());
 }

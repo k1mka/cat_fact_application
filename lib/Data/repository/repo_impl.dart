@@ -1,3 +1,4 @@
+import 'package:cat_fact_application/Data/models/fact.dart';
 import 'package:cat_fact_application/Data/repository/repo.dart';
 import 'package:cat_fact_application/Data/servises/cat_fact_service.dart';
 import 'package:cat_fact_application/Data/servises/cat_image_service.dart';
@@ -17,7 +18,7 @@ class RepositoryImpl extends Repository {
   }
 
   @override
-  Future<Map> fetchFacts() async {
+  Future<Fact> fetchFacts() async {
     final facts = await catFactService.fetchFacts();
     return facts;
   }

@@ -10,11 +10,16 @@ class CatImageWidget extends StatelessWidget {
       width: 300,
       child: AspectRatio(
         aspectRatio: 3 / 2,
-        child: Image.network(
-          link,
-          height: MediaQuery.of(context).size.height,
-          width: MediaQuery.of(context).size.width,
-          fit: BoxFit.cover,
+        child: PhysicalModel(
+          elevation: 8,
+          color: Colors.transparent,
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(20),
+            child: Image.network(
+              link,
+              fit: BoxFit.cover,
+            ),
+          ),
         ),
       ),
     );

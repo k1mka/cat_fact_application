@@ -2,18 +2,38 @@ import 'package:flutter/material.dart';
 
 class CatFactWidget extends StatelessWidget {
   final String fact;
-  const CatFactWidget({Key? key, required this.fact}) : super(key: key);
+  final DateTime date;
+  const CatFactWidget({Key? key, required this.fact, required this.date})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      child: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Text(
-          fact,
-          style: const TextStyle(
-            fontSize: 20,
-            // TODO: добавить красивый шрифт
+    return Padding(
+      padding: const EdgeInsets.all(16.0),
+      child: ConstrainedBox(
+        constraints: const BoxConstraints(maxHeight: 200),
+        child: Scrollbar(
+          thumbVisibility: true,
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                Text(
+                  // TODO: CONVERT STRING RESPONSE TO DATA TIME TYPE
+                  'Fact created at $date',
+                  style: const TextStyle(
+                    fontSize: 20,
+                    // TODO: добавить красивый шрифт
+                  ),
+                ),
+                Text(
+                  fact,
+                  style: const TextStyle(
+                    fontSize: 20,
+                    // TODO: добавить красивый шрифт
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ),

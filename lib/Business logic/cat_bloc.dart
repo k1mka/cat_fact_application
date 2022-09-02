@@ -13,14 +13,13 @@ class CatBloc extends Bloc<LoadedContentEvent, CatContentStates> {
         final images = await repo.fetchImages();
         final fact = await repo.fetchFacts();
 
-        emit(
-          LoadedCat(
-            factCat: CatFactAndPhoto(
-              images,
-              fact,
-            ),
-          ),
+        final catFactAndPhoto = CatFactAndPhoto(
+          images,
+          fact,
         );
+        await repo.saveCatFact(catFactAndPhoto);
+
+        emit(LoadedCat(factCat: catFactAndPhoto));
       } catch (e) {
         emit(ErrorCat(e));
       }

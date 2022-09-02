@@ -1,9 +1,9 @@
 import 'package:cat_fact_application/Data/models/cat_fact_and_photo.dart';
 import 'package:cat_fact_application/Data/models/fact.dart';
 import 'package:cat_fact_application/Data/repository/repo.dart';
-import 'package:cat_fact_application/Data/servises/cat_fact_service.dart';
-import 'package:cat_fact_application/Data/servises/cat_image_service.dart';
-import 'package:cat_fact_application/Data/servises/cat_storage_service.dart';
+import 'package:cat_fact_application/Data/services/cat_fact_service.dart';
+import 'package:cat_fact_application/Data/services/cat_image_service.dart';
+import 'package:cat_fact_application/Data/services/cat_storage_service.dart';
 
 class RepositoryImpl implements Repository {
   final CatImageService catImagesService;

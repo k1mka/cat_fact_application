@@ -18,7 +18,7 @@ class CatFactServiceImpl implements CatFactService {
   @override
   Future<Fact> fetchFacts() async {
     // TODO: should be removed when server is back alive
-    return Fact('Random fact!', DateTime.now());
+    return Fact('Random fact!' * 1000, DateTime.now());
     final url = Uri.parse(_randomCatFactUrl);
     final response = await get(url);
     Map<String, dynamic> responseMapFact = json.decode(response.body);

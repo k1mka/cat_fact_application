@@ -1,9 +1,9 @@
-import 'package:cat_fact_application/Business%20logic/cat_events.dart';
-import 'package:cat_fact_application/Business%20logic/cat_states.dart';
-import 'package:cat_fact_application/Business%20logic/cat_bloc.dart';
 import 'package:cat_fact_application/Presentation/widgets/cat_error_widget.dart';
 import 'package:cat_fact_application/Presentation/widgets/cat_photo_fact_widget.dart';
 import 'package:cat_fact_application/Presentation/widgets/custom_button.dart';
+import 'package:cat_fact_application/presentation/screens/bloc/cat_bloc.dart';
+import 'package:cat_fact_application/presentation/screens/bloc/cat_events.dart';
+import 'package:cat_fact_application/presentation/screens/bloc/cat_states.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

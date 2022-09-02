@@ -1,4 +1,4 @@
-import 'package:cat_fact_application/Data/repository/repo.dart';
+import 'package:cat_fact_application/data/repository/repo.dart';
 import 'package:cat_fact_application/presentation/screens/history_screen/bloc/history_events.dart';
 import 'package:cat_fact_application/presentation/screens/history_screen/bloc/history_states.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

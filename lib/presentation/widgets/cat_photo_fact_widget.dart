@@ -1,6 +1,6 @@
-import 'package:cat_fact_application/Data/models/cat_fact_and_photo.dart';
-import 'package:cat_fact_application/Presentation/widgets/cat_fact_widget.dart';
-import 'package:cat_fact_application/Presentation/widgets/cat_image_widget.dart';
+import 'package:cat_fact_application/data/models/cat_fact_and_photo.dart';
+import 'package:cat_fact_application/presentation/widgets/cat_fact_widget.dart';
+import 'package:cat_fact_application/presentation/widgets/cat_image_widget.dart';
 import 'package:flutter/material.dart';
 
 class CatPhotoFactWidget extends StatelessWidget {

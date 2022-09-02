@@ -1,4 +1,4 @@
-import 'package:cat_fact_application/Data/models/fact.dart';
+import 'package:cat_fact_application/data/models/fact.dart';
 import 'package:hive/hive.dart';
 
 part 'cat_fact_and_photo.g.dart';

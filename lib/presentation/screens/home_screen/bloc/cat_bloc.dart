@@ -1,7 +1,7 @@
-import 'package:cat_fact_application/Data/models/cat_fact_and_photo.dart';
-import 'package:cat_fact_application/Data/repository/repo.dart';
-import 'package:cat_fact_application/Presentation/screens/home_screen/bloc/cat_events.dart';
-import 'package:cat_fact_application/Presentation/screens/home_screen/bloc/cat_states.dart';
+import 'package:cat_fact_application/data/models/cat_fact_and_photo.dart';
+import 'package:cat_fact_application/data/repository/repo.dart';
+import 'package:cat_fact_application/presentation/screens/home_screen/bloc/cat_events.dart';
+import 'package:cat_fact_application/presentation/screens/home_screen/bloc/cat_states.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class CatBloc extends Bloc<LoadedContentEvent, CatContentStates> {

@@ -1,8 +1,8 @@
-import 'package:cat_fact_application/Presentation/screens/home_screen/bloc/cat_events.dart';
-import 'package:cat_fact_application/Presentation/screens/home_screen/bloc/cat_states.dart';
-import 'package:cat_fact_application/Presentation/widgets/cat_error_widget.dart';
-import 'package:cat_fact_application/Presentation/widgets/cat_photo_fact_widget.dart';
-import 'package:cat_fact_application/Presentation/widgets/custom_button.dart';
+import 'package:cat_fact_application/presentation/screens/home_screen/bloc/cat_events.dart';
+import 'package:cat_fact_application/presentation/screens/home_screen/bloc/cat_states.dart';
+import 'package:cat_fact_application/presentation/widgets/cat_error_widget.dart';
+import 'package:cat_fact_application/presentation/widgets/cat_photo_fact_widget.dart';
+import 'package:cat_fact_application/presentation/widgets/custom_button.dart';
 import 'package:cat_fact_application/presentation/screens/history_screen/history_screen.dart';
 import 'package:cat_fact_application/presentation/screens/home_screen/bloc/cat_bloc.dart';
 import 'package:flutter/material.dart';

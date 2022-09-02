@@ -1,5 +1,5 @@
 import 'dart:convert';
-import 'package:cat_fact_application/Data/models/fact.dart';
+import 'package:cat_fact_application/data/models/fact.dart';
 import 'package:http/http.dart';
 
 abstract class CatFactService {
@@ -17,8 +17,6 @@ class CatFactServiceImpl implements CatFactService {
 
   @override
   Future<Fact> fetchFacts() async {
-    // TODO: should be removed when server is back alive
-    return Fact('Random fact!' * 1000, DateTime.now());
     final url = Uri.parse(_randomCatFactUrl);
     final response = await get(url);
     Map<String, dynamic> responseMapFact = json.decode(response.body);
@@ -28,4 +26,10 @@ class CatFactServiceImpl implements CatFactService {
       DateTime.parse(responseMapFact['createdAt']),
     );
   }
+}
+
+class MockedCatFactService implements CatFactService {
+  @override
+  Future<Fact> fetchFacts() async =>
+      Fact('Random fact!' * 1000, DateTime.now());
 }

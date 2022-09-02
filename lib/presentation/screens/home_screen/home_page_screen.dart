@@ -1,4 +1,4 @@
-import 'package:cat_fact_application/Data/repository/repo.dart';
+import 'package:cat_fact_application/data/repository/repo.dart';
 import 'package:cat_fact_application/get_it.dart';
 import 'package:cat_fact_application/presentation/screens/home_screen/bloc/cat_bloc.dart';
 import 'package:cat_fact_application/presentation/screens/home_screen/home_layout.dart';

@@ -18,7 +18,7 @@ class CatFactWidget extends StatelessWidget {
             child: Column(
               children: [
                 Text(
-                  // TODO: CONVERT STRING RESPONSE TO DATA TIME TYPE
+                  // TODO: format data with locale
                   'Fact created at $date',
                   style: const TextStyle(
                     fontSize: 20,

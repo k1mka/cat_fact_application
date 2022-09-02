@@ -1,4 +1,4 @@
-import 'package:cat_fact_application/Presentation/screens/home_page_screen.dart';
+import 'package:cat_fact_application/presentation/screens/home_screen/home_page_screen.dart';
 import 'package:flutter/material.dart';
 
 class CatTrivia extends StatefulWidget {

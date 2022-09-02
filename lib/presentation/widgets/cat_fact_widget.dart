@@ -13,7 +13,6 @@ class CatFactWidget extends StatelessWidget {
       child: ConstrainedBox(
         constraints: const BoxConstraints(maxHeight: 200),
         child: Scrollbar(
-          thumbVisibility: true,
           child: SingleChildScrollView(
             child: Column(
               children: [

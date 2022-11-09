@@ -2,6 +2,8 @@ import 'package:cat_fact_application/data/models/cat_fact_and_photo.dart';
 import 'package:cat_fact_application/data/models/fact.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
+// doc:
+// the same as CatFactService, but for other type of data
 abstract class CatStorageService {
   Future<void> saveCatFact(CatFactAndPhoto catFactAndPhoto);
 
@@ -10,6 +12,8 @@ abstract class CatStorageService {
 
 class CatStorageServiceImpl implements CatStorageService {
   CatStorageServiceImpl() {
+    // doc:
+    // Hive is non-SQL database for Flutter. Was listed in task reqs.
     Hive.registerAdapter(CatFactAndPhotoAdapter());
     Hive.registerAdapter(FactAdapter());
   }

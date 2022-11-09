@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+// doc:
+// creation of reusable components improves code readability and makes it more flexible.
+// this is not best-written widget, but still it is better then copy/paste,
+// so u always need to aim for small reusable widgets.
 class CustomButton extends StatelessWidget {
   const CustomButton({
     Key? key,

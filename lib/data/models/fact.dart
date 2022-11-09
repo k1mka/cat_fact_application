@@ -1,6 +1,9 @@
 import 'package:hive/hive.dart';
 part 'fact.g.dart';
 
+// doc:
+// DTO that contains fact and date of its creation. (https://stackoverflow.com/questions/1051182/what-is-a-data-transfer-object-dto)
+// It is annotated with Hive in order to help hive to store it.
 @HiveType(typeId: 1)
 class Fact {
   @HiveField(0)

@@ -2,7 +2,8 @@ import 'package:cat_fact_application/data/models/fact.dart';
 import 'package:hive/hive.dart';
 
 part 'cat_fact_and_photo.g.dart';
-
+// doc:
+// DTO that contains Fact model and link to the cat photo
 @HiveType(typeId: 0)
 class CatFactAndPhoto {
   @HiveField(0)

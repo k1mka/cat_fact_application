@@ -2,6 +2,8 @@ import 'dart:convert';
 
 import 'package:http/http.dart';
 
+// doc:
+// the same as CatFactService, but for other type of data
 abstract class CatImageService {
   Future<String> fetchImages();
 }

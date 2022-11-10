@@ -6,6 +6,10 @@ import 'package:cat_fact_application/presentation/screens/history_screen/bloc/hi
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+// doc:
+// layout is widget, that responsible for screen UI.
+// It should not configure all screen view,
+// but manipulate the smaller widget depending of state of a screen.
 class HistoryLayout extends StatefulWidget {
   const HistoryLayout({Key? key}) : super(key: key);
 
@@ -14,9 +18,12 @@ class HistoryLayout extends StatefulWidget {
 }
 
 class _HistoryLayoutState extends State<HistoryLayout> {
+  // doc:
+  // passing initial event in initState method override,
+  // so our BLoc will start fetching data when screen is shown.
   @override
   void initState() {
-    BlocProvider.of<HistoryBloc>(context).add(LoadedHistoryEvent());
+    BlocProvider.of<HistoryBloc>(context).add(LoadHistoryEvent());
     super.initState();
   }
 
